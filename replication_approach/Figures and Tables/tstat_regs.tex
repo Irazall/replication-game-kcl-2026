@@ -1,0 +1,20 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Regressions to test for jump at 5\% significance, Outcome: Cumulative T-stat density \label{tab:ttestjump}}
+\begin{tabular}{l*{6}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}\\
+            &\multicolumn{1}{c}{\shortstack{Test\\Scores\\(all tstats)}}&\multicolumn{1}{c}{\shortstack{Test\\Scores\\$1<tstat<3$}}&\multicolumn{1}{c}{\shortstack{Ed.\\Attain\\(all tstats)}}&\multicolumn{1}{c}{\shortstack{Ed.\\Attain\\$1<tstat<3$}}&\multicolumn{1}{c}{\shortstack{All\\Outcomes\\(all tstats)}}&\multicolumn{1}{c}{\shortstack{All\\Outcomes\\$1<tstat<3$}}\\
+\hline
+Sig, 5\%-level (ind)&      0.0597         &     -0.0151         &       0.110\sym{*}  &    -0.00672         &      0.0763\sym{*}  &     -0.0148         \\
+            &    (0.0553)         &    (0.0260)         &    (0.0572)         &    (0.0724)         &    (0.0411)         &    (0.0272)         \\
+\hline
+\(N\)       &          26         &          15         &          12         &           6         &          38         &          21         \\
+\hline\hline
+\multicolumn{7}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{7}{l}{\footnotesize All models include controls for the t-stat and the square and cube of the t-stat.}\\
+\multicolumn{7}{l}{\footnotesize In column 5 pooled models (both outcome types) we include an indicator}\\
+\multicolumn{7}{l}{\footnotesize for the outcome and interact  t-stat and t-stat squared with the outcome.}\\
+\multicolumn{7}{l}{\footnotesize \sym{*} \(p<.1\), \sym{**} \(p<.05\), \sym{***} \(p<.01\)}\\
+\end{tabular}
+\end{table}

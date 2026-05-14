@@ -1,0 +1,20 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Meta-Regression Estimates \label{tab:noclustSDIV_sensregs}}
+\begin{tabular}{l*{5}{c}}
+\hline\hline
+            &\multicolumn{2}{c}{No Clustering}          &\multicolumn{1}{c}{No SD Adjustment}&\multicolumn{2}{c}{No Constructed IV}      \\\cmidrule(lr){2-3}\cmidrule(lr){4-4}\cmidrule(lr){5-6}
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}\\
+            &\multicolumn{1}{c}{\shortstack{Test Scores}}&\multicolumn{1}{c}{\shortstack{Educational Attainment}}&\multicolumn{1}{c}{\shortstack{Test Scores}}&\multicolumn{1}{c}{\shortstack{Test Scores}}&\multicolumn{1}{c}{\shortstack{Educational Attainment}}\\
+\hline
+Average Effect&      0.0303\sym{***}&      0.0545\sym{***}&      0.0375\sym{***}&      0.0369\sym{***}&      0.0579\sym{***}\\
+            &   (0.00524)         &   (0.00790)         &   (0.00651)         &   (0.00680)         &   (0.00871)         \\
+\hline
+Observations&          40         &          25         &          35         &          30         &          22         \\
+$\tau$      &      0.0220         &      0.0248         &      0.0215         &      0.0209         &      0.0280         \\
+Average 90\% PI&[-0.007,0.068]         &[0.013,0.096]         &[0.001,0.074]         &[0.001,0.073]         &[0.011,0.105]         \\
+\hline\hline
+\multicolumn{6}{l}{\footnotesize Standard errors in parentheses. Standard errors in models 3-5 are adjusted for clustering of related papers.}\\
+\multicolumn{6}{l}{\footnotesize \footnotesize \sym{*} \(p<.1\), \sym{**} \(p<.05\), \sym{***} \(p<.01\)}\\
+\end{tabular}
+\end{table}

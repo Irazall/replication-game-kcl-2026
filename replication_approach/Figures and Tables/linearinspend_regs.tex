@@ -1,0 +1,23 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Relationship between Size of Policy Effect on Spending and Student Outcomes \label{tab:linearinspendreg}}
+\begin{tabular}{l*{6}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}\\
+                    &\multicolumn{1}{c}{\shortstack{Test Scores\\All}}&\multicolumn{1}{c}{\shortstack{Test Scores\\w/o assumed}}&\multicolumn{1}{c}{\shortstack{Ed Attain\\All}}&\multicolumn{1}{c}{\shortstack{Ed Attain\\w/o assumed}}&\multicolumn{1}{c}{\shortstack{IV Model\\Test}}&\multicolumn{1}{c}{\shortstack{IV Model\\Ed Attain}}\\
+\hline
+Policy on Exp. (\$1000s)&      0.0379\sym{***}&      0.0295\sym{***}&      0.0419\sym{***}&      0.0572\sym{***}&      0.0379\sym{***}&      0.0419\sym{***}\\
+                    &   (0.00620)         &   (0.00758)         &    (0.0110)         &    (0.0115)         &   (0.00620)         &    (0.0110)         \\
+[1em]
+Constant            &    -0.00587         &    -0.00226         &      0.0153\sym{} &      0.0138         &    -0.00587         &      0.0153\sym{} \\
+                    &   (0.00669)         &   (0.00695)         &   (0.00740)         &    (0.0128)         &   (0.00669)         &   (0.00740)         \\
+\hline
+N                   &          40         &          33         &          25         &          18         &          40         &          25         \\
+Pr(slope = pooled avg.)&       0.454         &       0.900         &       0.294         &       0.243         &                     &                     \\
+Overidentification p-val&                     &                     &                     &                     &       0.107         &       0.774         \\
+F-Stat              &                     &                     &                     &                     &       23.39         &       17.21         \\
+\hline\hline
+\multicolumn{7}{l}{\footnotesize Standard errors in parentheses are adjusted for clustering of related papers.}\\
+\multicolumn{7}{l}{\footnotesize \footnotesize \sym{*} \(p<.1\), \sym{} \(p<.05\), \sym{***} \(p<.01\)}\\
+\end{tabular}
+\end{table}

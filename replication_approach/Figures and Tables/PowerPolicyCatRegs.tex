@@ -1,0 +1,24 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Meta-Regression Estimates by Power and Policy Categories \label{tab:powerpolcat_regs}}
+\begin{tabular}{l*{4}{c}}
+\hline\hline
+            &\multicolumn{2}{c}{\shortstack{Power to Detect\\Main Effect}}&\multicolumn{2}{c}{\shortstack{By Policy\\Categories}}\\\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+            &\multicolumn{1}{c}{\shortstack{Test\\Score}}&\multicolumn{1}{c}{\shortstack{Educational\\Attainment}}&\multicolumn{1}{c}{\shortstack{Test\\Score}}&\multicolumn{1}{c}{\shortstack{Educational\\Attainment}}\\
+\hline
+Average Effect&      0.0255\sym{***}&      0.0493\sym{***}&      0.0363\sym{***}&      0.0475\sym{***}\\
+            &   (0.00901)         &   (0.00602)         &   (0.00927)         &    (0.0123)         \\
+Voluntary Policy&                     &                     &    -0.00805         &      0.0217         \\
+            &                     &                     &    (0.0112)         &    (0.0144)         \\
+\hline
+Observations&          12         &          10         &          40         &          25         \\
+$\tau$      &      0.0223         &      0.0157         &      0.0193         &      0.0273         \\
+Average 90\% PI&[-0.014,0.065]         &[0.022,0.077]         &[-0.001,0.073]         &[-0.003,0.098]         \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize Standard errors in parentheses are adjusted for clustering of related papers.}\\
+\multicolumn{5}{l}{\footnotesize Voluntary Policy includes: Equalization, Referenda,}\\
+\multicolumn{5}{l}{\footnotesize School Finance Reform, New Construction, and School Improvement Grants.}\\
+\multicolumn{5}{l}{\footnotesize \footnotesize \sym{*} \(p<.1\), \sym{**} \(p<.05\), \sym{***} \(p<.01\)}\\
+\end{tabular}
+\end{table}

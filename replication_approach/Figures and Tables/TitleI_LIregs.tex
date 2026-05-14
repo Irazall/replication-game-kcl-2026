@@ -1,0 +1,29 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Meta-Regression Estimates, Title I Classified as Low-Income \label{tab:TitleILIregs}}
+\begin{tabular}{l*{2}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{Test Scores}&\multicolumn{1}{c}{Educational Attainment}\\\cmidrule(lr){2-2}\cmidrule(lr){3-3}
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         \\
+\hline
+Overall             &      0.0384\sym{***}&      0.0555\sym{***}\\
+                    &   (0.00678)         &   (0.00762)         \\
+Low-Income          &     -0.0244         &      0.0322         \\
+                    &    (0.0188)         &    (0.0241)         \\
+Non-Low-Income      &     -0.0237\sym{**} &     -0.0317         \\
+                    &    (0.0104)         &    (0.0194)         \\
+Capital             &    -0.00328         &                     \\
+                    &    (0.0112)         &                     \\
+\hline
+LI - Non-LI         &      -0.001         &     0.064**         \\
+(se)                &     (0.019)         &     (0.029)         \\
+\hline              &                     &                     \\
+Observations        &          40         &          23         \\
+Clusters            &          22         &          11         \\
+$\tau$              &      0.0203         &      0.0225         \\
+Average 90\% PI     &[0.008,0.069]         &[0.004,0.107]         \\
+\hline\hline
+\multicolumn{3}{l}{\footnotesize Standard errors in parentheses are adjusted for clustering of related papers.}\\
+\multicolumn{3}{l}{\footnotesize \footnotesize \sym{*} \(p<.1\), \sym{**} \(p<.05\), \sym{***} \(p<.01\)}\\
+\end{tabular}
+\end{table}

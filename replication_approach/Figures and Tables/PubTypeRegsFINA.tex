@@ -1,0 +1,33 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Meta-Regressions w/ Publication Type \label{tab:pubtyperegFINAL}}
+\begin{tabular}{l*{4}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+            &\multicolumn{1}{c}{\shortstack{Test\\Score}}&\multicolumn{1}{c}{\shortstack{Test\\Score}}&\multicolumn{1}{c}{\shortstack{Educational\\Attainment}}&\multicolumn{1}{c}{\shortstack{Educational\\Attainment}}\\
+\hline
+Unpublished &     -0.0160         &     -0.0144         &      0.0137         &     0.00448         \\
+            &    (0.0130)         &    (0.0169)         &    (0.0203)         &    (0.0308)         \\
+Top Field Journal&                     &     0.00659         &                     &     -0.0349         \\
+            &                     &    (0.0157)         &                     &    (0.0269)         \\
+Field Journal&                     &     0.00269         &                     &     0.00274         \\
+            &                     &    (0.0170)         &                     &    (0.0202)         \\
+Average Effect&      0.0374\sym{***}&      0.0357\sym{***}&      0.0560\sym{***}&      0.0685\sym{***}\\
+            &   (0.00642)         &    (0.0120)         &   (0.00998)         &    (0.0191)         \\
+\hline
+N           &          40         &          40         &          25         &          25         \\
+$\tau$      &      0.0225         &      0.0248         &      0.0294         &      0.0462         \\
+Top Field = Field = Unpublished = 0 (p-val)&                     &       0.578         &                     &       0.352         \\
+Unpublished = 0 (p-val)&       0.221         &       0.395         &       0.500         &       0.884         \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize Standard errors in parentheses are adjusted for clustering of related papers.}\\
+\multicolumn{5}{l}{\footnotesize Reference category High Impact ommitted.}\\
+\multicolumn{5}{l}{\footnotesize High Impact: American Economic Journal, Quarterly Journal of Economics, Review of Economics and Statistics,}\\
+\multicolumn{5}{l}{\footnotesize Sociology of Education.}\\
+\multicolumn{5}{l}{\footnotesize Top Field: Journal of Econometrics, Journal of Public Economics.}\\
+\multicolumn{5}{l}{\footnotesize Field: AERA Open, Economics of Education Review, Education Economics, Education Finance and Policy,}\\
+\multicolumn{5}{l}{\footnotesize Educational Evaluation and Policy Analysis, Public Finance Review, Russell Sage Foundation Journal of the Social}\\
+\multicolumn{5}{l}{\footnotesize Sciences, Journal of Public Administration Research and Theory, Journal of Urban Economics}\\
+\multicolumn{5}{l}{\footnotesize \footnotesize \sym{*} \(p<.1\), \sym{**} \(p<.05\), \sym{***} \(p<.01\)}\\
+\end{tabular}
+\end{table}
