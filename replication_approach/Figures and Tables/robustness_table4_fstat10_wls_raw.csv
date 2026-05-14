@@ -1,0 +1,3 @@
+row_item,target_element,specification_change,sample_filter_change,coefficient,se,p_value,N,clusters
+Original,Table 4 column 1,Random-effects robumeta,"F-stat > 10, test scores",.0324564355601844,.0059239329,4.2806001e-08,30,17
+Robustness check,Table 4 column 1,"Inverse-variance WLS, cluster SE",Same sample,.0188330539830173,.0067328019,.012915508,30,17

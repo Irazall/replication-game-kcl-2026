@@ -1,0 +1,2 @@
+why_appropriate,target_element,specification_change,sample_filter_change,original_coefficient,original_p_value,check_coefficient,check_p_value,outcome_vs_main
+Checks whether the F-stat > 10 test-score result depends on the random-effects meta-analysis method.,Table 4 column 1,Inverse-variance weighted fixed-effect/WLS with clustered SE,None; same F-stat > 10 test-score sample,.0324564355601844,4.28060010370e-08,.0188330539830173,.0129155079143916,Confirms
